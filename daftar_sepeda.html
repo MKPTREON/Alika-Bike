@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/Logo MKP BG.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <title>Sepeda</title>
+    <title>Alika Bike</title>
     <style>
       .card p{
         margin-top: -10px;
@@ -32,30 +32,49 @@
     padding: 72px 15px 65px 15px;
   }
       }
-
+.blink {
+  animation: blink-animation 1s steps(5,start) infinite;
+  -webkit-animation: blink-animation 1s steps(5,start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 
     </style>
   </head>
   <body>
     
       
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: linear-gradient(-20deg, rgb(46, 46, 46), rgb(46, 46, 46), rgb(46, 46, 46), rgb(46, 46, 46));">
           <div class="container">
-            <h3><i class="fas fa-cart-plus mr-3"></i></h3>
-            <li class="navbar-brand font-weight-bold text-white" href="Produk.html">MKP TREON</li>
-            <a href="Makanan.html" style="text-decoration: none; color: rgb(0, 0, 0);" data-toggle="tooltip" title="Refresh">
-              <i class="fas fa-sync"></i>
-            </a>
+            <svg style="width:50px;color: #ffffff;height:35px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M19 10C18.44 10 17.91 10.11 17.41 10.28L14.46 4.5H11V6H13.54L14.42 7.72L12 13.13L10.23 8.95C10.5 8.85 10.74 8.58 10.74 8.25C10.74 7.84 10.41 7.5 10 7.5H8C7.58 7.5 7.24 7.84 7.24 8.25S7.58 9 8 9H8.61L10.86 14.25H9.92C9.56 11.85 7.5 10 5 10C2.24 10 0 12.24 0 15S2.24 20 5 20C7.5 20 9.56 18.15 9.92 15.75H12.5L15.29 9.43L16.08 10.96C14.82 11.87 14 13.34 14 15C14 17.76 16.24 20 19 20S24 17.76 24 15 21.76 10 19 10M5 18.5C3.07 18.5 1.5 16.93 1.5 15S3.07 11.5 5 11.5C6.67 11.5 8.07 12.68 8.41 14.25H4V15.75H8.41C8.07 17.32 6.67 18.5 5 18.5M19 18.5C17.07 18.5 15.5 16.93 15.5 15C15.5 13.92 16 12.97 16.77 12.33L18.57 15.85L19.89 15.13L18.1 11.63C18.39 11.56 18.69 11.5 19 11.5C20.93 11.5 22.5 13.07 22.5 15S20.93 18.5 19 18.5Z" />
+          </svg>
+           <!-- logo -->
+           <a class="logo">
+            <img class="logoBesar" src="img/Logo MKP BG.png" alt="Alika Bike" style="width: 5rem;">
+          </a> 
+          <p><p></p></p>
+        <li class="list-inline-item">
+              <a></a>
+          </li> 
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button  style="background: #ffffff;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mr-4">
-                <li class="nav-item active">
+                <!-- <li class="nav-item active">
                   <a class="btn btn-primary" href="index.html" role="button">Beranda</a>
-                </li>
+                </li> -->
                 <!-- menu icon
                 <li class="nav-item active">
                   <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
@@ -67,145 +86,370 @@
                   <a class="nav-link" href="#">Bantuan <span class="sr-only">(current)</span></a>
                 </li>
                 -->
-
               </ul>
-              
+
+              <div class="contact">
+                <h5>
+                  <!-- <li class="list-inline-item">
+                    <a class="social-link rounded-circle mr-3" style="color: rgb(219, 2, 2);" data-toggle="tooltip" title="Chat Langsung" href="https://api.whatsapp.com/send?phone=6287825220260&text=Hallo+Admin%0ASaya+ada+kendala+dalam+pemesanan+produk" target="blank"><i class="fab fa-rocketchat"></i></a>
+                </li>   -->
+                <font size="2" style="color: white;">Whatsapp Untuk Layanan Bengkel :<br> </font>
+                  <li class="list-inline-item">
+                    <a class="social-link rounded-circle mr-3" style="color: rgb(136, 0, 118);" data-toggle="tooltip" title="Chat menuju whatsapp" href="https://www.instagram.com/invites/contact/?i=173ia4isyss3x&utm_content=h5u49o2" 
+                    target="blank"><font size="3"><strong>(0853)-2366-6527</strong></font></i></a>
+                </li>
+                
+                </h5>
+                
+              </div>
 
               <div class="icon">
                 <h5>
-                  <li class="list-inline-item">
-                    <a class="social-link rounded-circle mr-3" style="color: rgb(36, 179, 0);" data-toggle="tooltip" title="DOWNLOAD APLIKASI" href="Belum-Tersedia.html" target="blank"><i class="fas fa-arrow-alt-circle-down"></i></a>
+                  <!-- <li class="list-inline-item">
+                    <a class="social-link rounded-circle mr-3" style="color: rgb(255, 255, 255);" data-toggle="tooltip" title="Chat Langsung" href="https://api.whatsapp.com/send?phone=6287825220260&text=Hallo+Admin%0ASaya+ada+kendala+dalam+pemesanan+produk" target="blank"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                  </svg></a>
                 </li>
-                  <li class="list-inline-item">
-                    <a class="social-link rounded-circle mr-3" style="color: rgb(219, 2, 2);" data-toggle="tooltip" title="Chat Langsung" href="https://api.whatsapp.com/send?phone=6287825220260&text=Hallo+Admin%0ASaya+ada+kendala+dalam+pemesanan+produk" target="blank"><i class="fab fa-rocketchat"></i></a>
-                </li>  
                   <li class="list-inline-item">
                     <a class="social-link rounded-circle mr-3" style="color: rgb(136, 0, 118);" data-toggle="tooltip" title="Follow" href="https://www.instagram.com/invites/contact/?i=173ia4isyss3x&utm_content=h5u49o2" target="blank"><i class="icon-social-instagram"></i></a>
-                </li>
+                </li> -->
+                
                 </h5>
                 
               </div>
             </div>
           </div>
         </nav>
-
-          <div class="row mt-5 no-gutters">
+        <!-- warna background -->
+          <div class="row mt-5 no-gutters" style="background: rgb(158, 158, 158);">
             <div class="col-md-3 bg-light">
-                <ul class="list-group list-group-flush p-4 pt-4">
-                <li class="list-group-item" style="background: linear-gradient(-20deg, rgb(255, 251, 0), #ffff, rgb(255, 251, 0), rgb(255, 251, 0));"><i class="fas fa-utensils mr-3"></i>Menu Makanan</li>
+                <ul class="list-group list-group-flush p-4 pt-4" style="background: rgb(158, 158, 158);">
+                  
+                  <!-- ucapan selamat datang -->
+                  <!-- <script>
+                    var Digital=new Date()
+                    var hours=Digital.getHours()
+
+                    if (hours >= 5 && hours <= 10) 
+                    //pesan pagi hari (05.00-11.00)
+                    document.write('<b style="color: (red)";>Hai Selamat Pagi!😍</b>')
+                    else if (hours >= 11 && hours <= 14) 
+                    //pesan siang hari (12.00-13.00)
+                    document.write('<b>Hai Selamat Siang! Terima Kasih Sudah Berkunjung😋</b>')
+                    else if (hours >= 15 && hours <= 17) 
+                    //pesan sore hari(14.00-17.00)
+                    document.write('<b style="color: rgb(255, 0, 140);">Hai Selamat Sore dan Selamat Bersantai! Terima Kasih Sudah Berkunjung😉</b>')
+                    else if (hours >= 18 && hours <= 24) 
+                    //pesan malam hari (21.00-23.00)
+                    document.write('<b>Selamat Malam dan Selamat Beristirahat! Terima Kasih Sudah Berkunjung😇</b>') 
+                    else
+                    document.write('<b>Selamat Malam dan Selamat Beristirahat! Terima Kasih Sudah Berkunjung😇</b>') 
+
+                  </script> -->
+                  <br>
+                  <!-- hari, tgl, tahun masehi -->
+                  <!-- <script type='text/javascript'>
+                    var fixd;
+                    
+                    function isGregLeapYear(year)
+                    {
+                    return year%4 == 0 && year%100 != 0 || year%400 == 0;
+                    }
+                    
+                    
+                    function gregToFixed(year, month, day)
+                    {
+                    var a = Math.floor((year - 1) / 4);
+                    var b = Math.floor((year - 1) / 100);
+                    var c = Math.floor((year - 1) / 400);
+                    var d = Math.floor((367 * month - 362) / 12);
+                    
+                    if (month <= 2)
+                    e = 0;
+                    else if (month > 2 && isGregLeapYear(year))
+                    e = -1;
+                    else
+                    e = -2;
+                    
+                    return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+                    }
+                    
+                    function Hijri(year, month, day)
+                    {
+                    this.year = year;
+                    this.month = month;
+                    this.day = day;
+                    this.toFixed = hijriToFixed;
+                    this.toString = hijriToString;
+                    }
+                    
+                    function hijriToFixed()
+                    {
+                    return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+                    Math.floor((3 + 11 * this.year) / 30) + 227015 - 1;
+                    }
+                    
+                    function hijriToString()
+                    {
+                    var months = new Array("Muharram","Safar","Rabiul Awwal","Rabiul Tsani","Jumadil Ula","Jumadil Tsani","Rajab","Sya\'ban","Ramadhan","Syawwal","Dzul Qa\'dah","Dzul Hijjah");
+                    return this.day + " " + months[this.month -1]+ " " + this.year;
+                    }
+                    
+                    function fixedToHijri(f)
+                    {
+                    var i=new Hijri(1100, 1, 1);
+                    i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+                    var i2=new Hijri(i.year, 1, 1);
+                    var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+                    i.month = Math.min(m, 12);
+                    i2.year = i.year;
+                    i2.month = i.month;
+                    i2.day = 1;
+                    i.day = f - i2.toFixed() + 1;
+                    return i;
+                    }
+                    
+                    var tod=new Date();
+                    var weekday=new Array("Ahad","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu");
+                    var weekdayislam=new Array("Ahad","Itsnain","Tsulasa","Arbi'a","Khomiis","Jumu'ah","Sabtu");
+                    var monthname=new Array("Januari","Februari","Maret","April","Mei"," Juni","Juli","Agustus","September","Oktober","November","Desember");
+                    
+                    var y = tod.getFullYear();
+                    var m = tod.getMonth();
+                    var d = tod.getDate();
+                    var dow = tod.getDay();
+                    document.write(weekday[dow] + ", " + d + " " + monthname[m] + " " + y + " M");
+                  
+                    </script> -->
+                    <!-- <br> -->
+                    <!-- <script>
+                      m++;
+                      fixd=gregToFixed(y, m, d);
+                      var h=new Hijri(1421, 11, 28);
+                      h = fixedToHijri(fixd);
+                    </script> -->
+
+                  
+                <!-- <h6>Jam : <span id="clock"></span></h6> -->
+                    <p>Kamu Mencari <b>Jenis Sepedah</b> Apa? <br> Bisa Cek di Bawah</p>
+
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Status Toko : <b style="color: #6e0000;" id="jamTutup"></b><b style="color: #009926;" id="jamBuka"></b></p>
                 
-                <a href="Dorayaki.html" style="text-decoration: none; color: rgb(0, 0, 0);">
-                  <li class="list-group-item" title="Dorayaki Oreo Isi Selai Oreo" data-toggle="tooltip"><i><img src="Makanan/img/dorayaki.png" alt="Produk Baru" class="image mr-2" style="width: 10%;"></i>Dorayaki Oreo</li>
+              <li class="list-group-item" style="background: linear-gradient(-100deg, rgb(0, 255, 179), #ffff, #ffff, rgb(84, 241, 97));"><i class="fas fa-list mr-2"></i><b>PILIHAN LAINNYA</b></li>
+                
+                <a href="Pulsa.html" style="text-decoration: none; color: rgb(0, 17, 255); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Kamu bisa menemukan berbagai macam kebutuhan sepedamu"><i class="fas fa-cog fa-spin mr-2" ></i><b>Spare Part</b></li>
                 </a>
 
-                <a href="Produk.html" style="text-decoration: none; color: rgb(0, 0, 0);">
-                    <li class="list-group-item" data-toggle="tooltip"><i class="fas fa-angle-left mr-2"></i>Menu Awal</li>
-                  </a>
+                <a href="page_handphone.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                  <li class="list-group-item" data-toggle="tooltip" title="Kamu bisa menemukan berbagai macam jenis sepeda"><i class="fas fa-angle-left mr-2"></i><b>Menu Awal</b></li>
+                </a>
+
+                <!-- <a href="Paket-Data.html" style="text-decoration: none; color: rgb(164, 167, 16); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Paket Data"><i class="fas fa-mobile mr-2" ></i>Kuota Internet</li>
+                </a>
+
+                <a href="#" style="text-decoration: none; color: rgb(50, 146, 21); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Coming Soon!"><i class="fas fa-cogs mr-2" ></i>Kuota Nelpon&nbsp•</li>fas fa-phone-volume
+                </a>
+
+                <a href="#" style="text-decoration: none; color: rgb(122, 9, 117); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Coming Soon!" data-date="16/01/2022 00:00:00"><i class="fas fa-cogs mr-2" ></i>Kuota SMS&nbsp•</li>fas fa-sms
+                </a>
+
+                <a href="PLN-Pascabayar.html" target="blank" style="text-decoration: none; color: rgb(143, 12, 18);">
+                  <li class="list-group-item" data-toggle="tooltip" title=" Cek Tagihan Listrik"><i class="fas fa-bolt mr-2"></i>PLN Pascabayar</li>
+                </a>
                 
+                <a href="PLN-Prabayar.html" style="text-decoration: none; color: rgb(11, 148, 68);">
+                  <li class="list-group-item" data-toggle="tooltip" title="Pulsa Listrik"><i class="fas fa-bolt mr-2"></i>PLN Prabayar</li>
+                </a>
                 
+                <a href="#" style="text-decoration: none; color: rgb(8, 86, 117); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Coming Soon!"><i class="fas fa-cogs mr-2" ></i>Tagihan Wifi&nbsp•</li>fas fa-wifi
+                </a>
+
+                <a href="#" style="text-decoration: none; color: rgb(156, 134, 11); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Coming Soon!"><i class="fas fa-cogs mr-2" ></i>Tagihan PDAM&nbsp•</li>fas fa-tint 
+                </a>
+
+                <a href="Voucher-Games.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                  <li class="list-group-item" data-toggle="tooltip" title="VOUCHER GAMES"><i class="fas fa-gamepad mr-2"></i>Games</li>
+                </a>  
+
+                <a href="#" style="text-decoration: none; color: rgb(12, 95, 219);">
+                  <li class="list-group-item" data-toggle="tooltip" title="GANGGUAN!"><i class="fas fa-wallet mr-2" ></i>E-Wallet <i style="color: dimgray;">*Gangguan</i></li>
+                </a>
+                 <a href="E-wallet.html" style="text-decoration: none; color: rgb(12, 95, 219);">
+                  <li class="list-group-item" data-toggle="tooltip" title="Dompet Elektronik"><i class="fas fa-wallet mr-2" ></i>E-Wallet</li>
+                </a> 
+
+                <a href="Transfer-Bank.html" style="text-decoration: none; color: rgb(0, 0, 0); ">
+                  <li class="list-group-item" data-toggle="tooltip" title="Transfer antar bank"><i class="fas fa-university mr-2" ></i>Transfer Bank</li>
+                </a> -->
                 
-              </ul>
-          </div>
+              </div>
           <div class="col-md-9">
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Makanan/img/kebab durian bg.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Makanan/img/kebab durian bg 2.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item ">
-                    <img src="Makanan/img/es durian malmut 1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Makanan/img/es durian malmut 2.jpg" class="d-block w-100" alt="...">
-                  </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- <div class="carousel-item active">
+                   <img src="img/buka 6 pagi.jpg" class="d-block w-100" alt="...">
+                  <img src="img/toko buka.jpg" class="d-block w-100" alt="...">
+                </div> -->
+                <div class="carousel-item active">
+                  <img src="img/ppob.jpg" class="d-block w-100" alt="...">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <!-- <div class="carousel-item">
+                  <img src="img/toko online.jpg" class="d-block w-100" alt="...">
+                </div> -->
               </div>
-            <br>
-            <h4 class="text-center font-weight-bold m-4">===========MAKANAN BERDURIAN===========</h4>
-            <br>
-            <div class="row mx-auto">
-              <div class="card mr-2 ml-2 mt-5" style="width: 20rem; height: 32rem;;">
-                <div id="carouselExamples" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="Es Durian Malmut/img/1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Es Durian Malmut/img/2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExamples" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExamples" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                <div class="card-body bg-light">
-                  <h5 class="card-title">Es Durian Malmut (Manis Lumer di Mulut) Original Dalgona<br> <b>Ada Tekstur Durian Asli</b> </h5>
-                  <p class="card-text">
-                    <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i>
-                  <i class="fas fa-star text-warning"></i>
-                  <i class="far fa-star text-warning"></i>
-                  <i class="far fa-star text-warning"></i>
-                  </p><br>
-                  <a href="#" class="btn btn-primary" style="width: 17rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
-                  <!-- <a href="#" class="btn btn-danger mt-2" style="width: 17rem;" data-target="#produk1" data-toggle="modal">Harga Rp 8.000/cup</a> -->
-                  <a href="#" class="btn btn-danger mt-2" style="width: 17rem;" data-target="#produk1" data-toggle="modal">HABIS!</a>                  
-                </div>
-              </div>
-                
-              <div class="card mr-2 ml-4 mt-5" style="width: 20rem; height: 32rem;;">
-                <div id="carouselsExamples" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="Kebab-Durian/img/kebab durian 1.jpeg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Kebab-Durian/img/kebab durian 2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselsExamples" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselsExamples" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                <div class="card-body bg-light">
-                  <h5 class="card-title"><b>KEBAB DURIAN</b></h5>
-                  <img src="Es Durian Malmut/img/new.png" alt="Produk Baru" class="image" style="width: 20%;">
-                  <p class="card-text"></p><br><br>
-                  <button href="#" style="width: 17rem;" data-target="#produk2" data-toggle="modal" type="button" class="btn btn-primary position-relative">
-                    Lihat Detail
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      Baru
-                    </span>
-                  </button>
-                  <!-- <a href="#" class="btn btn-danger mt-2" style="width: 17rem;" data-target="#produk1" data-toggle="modal">Harga Rp 8.000/cup</a> -->
-                  <a href="#" class="btn btn-danger mt-2" style="width: 17rem;" data-target="#produk2" data-toggle="modal">Rp 15.000/pcs</a>                  
-                </div>
-              </div> 
-          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
 
-          <div class="copyright bg-white text-black text-center font-weight-bold p-2 mt-4">
-            <i class="far fa-copyright">2022 Developer by Kemal Pasha <span style="color: #001d6e;">&#10026;</span><p><p>Selamat Datang di Toko Kami, Enjoy Dalam Pemesanan Yaah ;)</p></p></i>
+            <h4 class="text-center font-weight-bold m-4">JENIS-JENIS SEPEDA</h4>
+
+            <div class="row mx-auto">
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+      
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+      
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+      
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+      
+              <div class="card mr-2 mt-5" style="width: 14rem; margin-left: 22%; border-radius: 50%;">
+                <img src="img/Sepeda MTB.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h6 class="card-title">
+                    Sepeda MTB 27.5" <br> Thrill Oust 5.0 T120 TERBARU 5
+                  </h6>
+                  <h6 style="background: rgb(158, 158, 158); border-radius: 50%;"><p class="text-center mt-2" style="color: #009926;">Stok : Ada</p></h6>
+                  <!-- <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i6
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i> -->
+                  <p class="card-text"></p><br>
+                  <a href="#" class="btn btn-primary" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Lihat Detail</a>
+                  <a href="#" class="btn btn-danger" style="width: 11rem;" data-target="#produk1" data-toggle="modal">Rp 3.500.000</a>
+      
+                </div>
+              </div>
+          </div>
+          <div class="copyright bg-grey text-black text-center font-weight-bold p-2 mt-4">
+            <i class="far fa-copyright">2022 Developer by Kemal Pasha <span style="color: #001d6e;">&#10026;</span></i><p></p>
           </div>
           
     
@@ -227,7 +471,81 @@
     
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script type="text/javascript">
+      function showTime() {
+          var a_p = "";
+          var today = new Date();
+          var curr_hour = today.getHours();
+          var curr_minute = today.getMinutes();
+          var curr_second = today.getSeconds();
+          if (curr_hour < 12) {
+              a_p = "AM";
+          } else {
+              a_p = "PM";
+          }
+          if (curr_hour == 0) {
+              curr_hour = 12;
+          }
+          if (curr_hour > 12) {
+              curr_hour = curr_hour - 12;
+          }
+          curr_hour = checkTime(curr_hour);
+          curr_minute = checkTime(curr_minute);
+          curr_second = checkTime(curr_second);
+       document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p ;
+          }
+  
+      function checkTime(i) {
+          if (i < 10) {
+              i = "0" + i;
+          }
+          return i;
+      }
+      setInterval(showTime, 500);
+      //-->
+      </script>
+      <!-- ===================================================== countdown-->
+      <script>
+        // Tetapkan tanggal kita menghitung mundur
+        var countDownDate = new Date("Feb 28, 2022 00:00:00").getTime();
+        
+        // Perbarui hitungan mundur setiap 1 detik
+        var x = setInterval(function() {
+        
+          // Dapatkan tanggal dan waktu hari ini
+          var now = new Date().getTime();
+            
+          // Temukan jarak antara sekarang dan tanggal hitung mundur
+          var distance = countDownDate - now;
+            
+          // Perhitungan waktu untuk hari, jam, menit dan detik
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Keluarkan hasil dalam elemen dengan id = "tanggal"
+          document.getElementById("tanggal").innerHTML = "~" + days + "h " + hours + "j "+ minutes + "m " + seconds + "d " + "~";
+            
+          //Jika hitungan mundur selesai, tulis beberapa teks
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("tanggal").innerHTML = "~Isra' Mi'raj~";
+          }
+        }, 1000);
+        </script>
+  <!-- =============================================================================================status toko -->
+  <script type='text/javascript'>
+    var now = new Date();
+    var hours = now.getHours();
+       // Jam 9 Malam - 6 Pagi
+    if (hours >= 18 || hours <= 6){
+   document.getElementById('jamTutup').innerHTML="TUTUP";
+      // Jam 6 Pagi - 9 Malam
+    } else if (hours >= 7 || hours <= 17){
+   document.getElementById('jamBuka').innerHTML="BUKA";
+    } 
+   </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -244,8 +562,6 @@
     </script>
 
     <!-- Modal -->
-    
-
     <div class="modal fade" id="produk1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -256,243 +572,337 @@
             </button>
           </div>
           <div class="modal-body">
-              <div class="col-md-50">
+            <div class="col-md-6">
               <table class="table table-borderless">
-                
                 <tr>
-                  <th>Nama</th>
-                  <td>Es Durian Malmut Original Dalgona (Ada Tekstur Durian Asli)</td>
+                  <th>Nama Produk</th>
+                  <td>Telkomsel 5k</td>
                 </tr>
                 <tr>
-                  <th>Populer</th>
-                  <td><b>PRODUK BARU</b></td>
-                </td>
+                  <th>Banyak Dibeli</th>
+                  <td><i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                    <i class="fas fa-star text-success"></i>
+                  </td>
                 </tr>
                 <tr>
                   <th>Harga</th>
-                  <td>Rp 8.000 per cup</td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
+                  <td>Rp 7.000</td>
                 </tr>
-                <tr>
-                  <th>Stok</th>
-                  <td>HABIS!</td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                </tr>
-                <tr>
-                  <th>Catatan</th>
-                  <td style="color: red;"> <b>*Delivery hanya khusus daerah Pameungpeuk dan Cikelet</b></td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                </tr>
-              </div>
-    
-              </table>
+
             </div>
+
+            </table>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+          <a type="button" class="btn btn-primary" href="pulsa-telkomsel/Telkomsel5k.html" target="blank">Beli</a>
         </div>
       </div>
     </div>
-    <!-- <div class="modal fade" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="col-md-50">
-              <table class="table table-borderless">
-                <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="Es Durian Malmut/img/1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Es Durian Malmut/img/2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="Es Durian Malmut/img/6.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                <tr>
-                  <th>Nama</th>
-                  <td>Es Durian Malmut Original Dalgona (Ada Tekstur Durian Asli)</td>
-                </tr>
-                <tr>
-                  <th>Populer</th>
-                  <td><b>PRODUK BARU</b></td>
+  </div>
+
+  <div class="modal fade" id="produk2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-6">
+            <table class="table table-borderless">
+              <tr>
+                <th>Nama Produk</th>
+                <td>Telkomsel 10k</td>
+              </tr>
+              <tr>
+                <th>Banyak Dibeli</th>
+                <td><i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
+                  <i class="fas fa-star text-success"></i>
                 </td>
-                </tr>
-                <tr>
-                  <th>Harga</th>
-                  <td>Rp 8.000 per cup</td>
-                   <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                <!--</tr>
-                <tr>
-                  <th>Stok</th>
-                  <td>Masih Ada</td>
-                   <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                <!--</tr>
-                <tr>
-                  <th>Catatan</th>
-                  <td style="color: red;"> <b>*Delivery hanya khusus daerah Pameungpeuk dan Cikelet</b></td>
-                  <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                <!-- </tr>
-              </div>
-    
-              </table>
-            </div>
+              </tr>
+              <tr>
+                <th>Harga</th>
+                <td>Rp 12.000</td>
+              </tr>
+
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-            <a type="button" class="btn btn-primary" data-target="#2" data-toggle="modal">Isi Alamat</a>
-          </div>
+
+          </table>
         </div>
       </div>
-    </div> -->
-
-    <div class="modal fade" id="produk2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="col-md-50">
-              <table class="table table-borderless">
-                <div id="carouselExample" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="Kebab-Durian/img/kebab durian 1.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <!-- <div class="carousel-item">
-                      <img src="Dorayaki/Oreo/img/2 ph.jpg" class="d-block w-100" alt="...">
-                    </div>-->
-                    <div class="carousel-item">
-                      <img src="Kebab-Durian/img/kebab durian 2.jpg" class="d-block w-100" alt="...">
-                    </div> 
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-                <tr>
-                  <th>Nama</th>
-                  <td>KEBAB DURIAN</td>
-                </tr>
-                <tr>
-                  <th>Populer</th>
-                  <td><b>PRODUK BARU</b></td>
-                </td>
-                </tr>
-                <tr>
-                  <th>Harga</th>
-                  <td>Rp 15.000 per pcs</td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                </tr>
-                <tr>
-                  <th>Stok</th>
-                  <td>MASIH ADA</td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                </tr>
-                <tr>
-                  <th>Catatan</th>
-                  <td style="color: red;"> <b>*Delivery hanya khusus daerah Pameungpeuk dan Cikelet</b></td>
-                  <!-- <td>Rp 3.500 (Admin naik s/d akhir bulan januari)</td> -->
-                </tr>
-              </div>
-              </table>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-            <a type="button" class="btn btn-primary" data-target="#konfirmasi2" data-toggle="modal">Isi Alamat</a>
-          </div>
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+        <a type="button" class="btn btn-primary" href="pulsa-telkomsel/Telkomsel10k.html" target="blank">Beli</a>
       </div>
     </div>
+  </div>
+</div>
 
+<div class="modal fade" id="produk3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>XL 15k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 17.000</td>
+            </tr>
 
-
-
-
-
-
-
-    <div class="modal fade" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header" style="color: #001d6e; background: #5e5e5e;">
-            <h5 class="modal-title" id="exampleModalLabel"> <b>Pilih Metode Pengiriman</b></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="col-md-50" style="color: rgb(0, 0, 0);">
-                <td ><b>1). Pesanan kamu mau&nbsp</b></td>
-                <a type="button" class="btn btn-primary" href="Es Durian Malmut/Durcek-diantar.html" target="blank">Diantarkan ke rumah/delivery</a>
-                <td > <b><br> <br>2). Pesanan kamu mau&nbsp</b></td>                
-                <a type="button" class="btn btn-primary" href="Es Durian Malmut/Durcek-diambil.html" target="blank">Diambil ke sini</a>
-              <table class="table table-borderless">
-              </div>
-              </table>
-            </div>
-          </div>
-          <div class="modal-footer" style="background: #5e5e5e;">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-          </div>
         </div>
+
+        </table>
       </div>
     </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+      <a type="button" class="btn btn-primary" href="pulsa-XL/XL15k.html" target="blank">Beli</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="produk3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>XL 15k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 17.000</td>
+            </tr>
 
-    <div class="modal fade" id="konfirmasi2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header" style="color: #001d6e; background: #5e5e5e;">
-            <h5 class="modal-title" id="exampleModalLabel"> <b>Pilih Metode Pengiriman</b></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="col-md-50" style="color: rgb(0, 0, 0);">
-                <td ><b>1). Kebab Duriannya mau&nbsp</b></td>
-                <a type="button" class="btn btn-primary" href="Kebab-Durian/Kebab-Durian-diantar.html" target="blank">Diantarkan ke rumah/delivery</a>   
-                <td > <b><br> <br>2). Kebab Duriannya mau&nbsp</b></td>                
-                <a type="button" class="btn btn-primary" href="Kebab-Durian/Kebab-Durian-diambil.html" target="blank">Diambil ke sini</a>
-              <table class="table table-borderless">
-              </div>
-              </table>
-            </div>
-          </div>
-          <div class="modal-footer" style="background: #5e5e5e;">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
-          </div>
         </div>
+
+        </table>
       </div>
     </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+      <a type="button" class="btn btn-primary" href="pulsa-XL/XL15k.html" target="blank">Beli</a>
+    </div>
+  </div>
+</div>
+</div>
 
+<div class="modal fade" id="produk4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>XL 25k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 26.000</td>
+            </tr>
+
+        </div>
+
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+      <a type="button" class="btn btn-primary" href="pulsa-XL/XL25k.html" target="blank">Beli</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="produk5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>Indosat 60k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 61.000</td>
+            </tr>
+
+        </div>
+
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+      <a type="button" class="btn btn-primary" href="pulsa-indosat/Indosat60k.html" target="blank">Beli</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="produk6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>Indosat 80k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 81.000</td>
+            </tr>
+
+        </div>
+
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+      <a type="button" class="btn btn-primary" href="pulsa-indosat/Indosat80k.html" target="blank">Beli</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="produk7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="col-md-20">
+          <table class="table table-borderless">
+            <tr>
+              <th>Nama Produk</th>
+              <td>IM3 5k</td>
+            </tr>
+            <tr>
+              <th>Populer</th>
+              <td><i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+                <i class="fas fa-star text-success"></i>
+              </td>
+            </tr>
+            <tr>
+              <th>Harga</th>
+              <td>Rp 7.000</td>
+            </tr>
+            
+          </div>
+
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+        <a type="button" class="btn btn-primary" href="pulsa-IM3/IM35k.html" target="blank">Beli</a>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
